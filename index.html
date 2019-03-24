@@ -1,0 +1,239 @@
+<!Doctype html>
+<html>
+  <head>
+    
+	<link rel ="stylesheet" type="text/css" href ="tech-doc-style.css">
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    
+  </head>
+   
+  <body>
+   
+        <a href ="#navbar" class ="menu-open">
+          <span class="material-icons" id="menu-open-icon">menu</span></a>
+    
+      
+        <nav id ="navbar">
+
+        
+       
+        <ul>
+          <header><li>Basic Python Documentation</li></header>
+            <a href="#Introduction" class="nav-link"><li>Introduction</li></a>
+            <a href="#Variables" class="nav-link"><li>Variables</li></a>
+            <ul>
+              <a href="#data_Types"><li>Built-In Data Types</li></a>
+              <a href="#Declaring"><li>Declaring Variables</li></a>
+            </ul>
+            <a href="#Conditionals" class="nav-link"><li>Conditionals</li><a>
+            <ul>
+              <a href="#If-Elif-Else"><li>If/Elif/Else</li></a>
+            </ul>
+             <a href="#Loops" class="nav-link"><li>Loops</li></a>
+             <ul>
+              <a href="#While"><li>While Loop</li></a>
+              <a href="#For"><li>For Loop</li></a>
+            </ul>
+              <a href="#Functions" class="nav-link"><li>Functions</li></a>
+              <ul>
+                <a href="#Calling"><li>Calling Functions</li></a>
+                <a href="#Parameters"><li>Parameters</li></a>
+                <a href="#Return"><li>Return</li></a>
+            </ul>
+                
+          </ul> 
+              
+              <a href ="#menu-toggle" class ="menu-close">
+          <span class="material-icons" id="menu-close-icon">close</span></a>
+      </nav>
+          
+          
+          <a href="#menu-togggle" class ="menu-backdrop" hidden></a>
+          
+          
+          
+      <main id="main-doc">
+            <section class="main-section" id="Introduction">
+              <header class="main-section-header"><h1>Introduction</h1></header>
+              
+              <p class="section-text">Python, named after the British comedy group Monty Python, is an interpreted, interactive, object-oriented programming language. Its flexibility allows it to do many things, both big and small. Python can be used to write simple programs, but it also possesses the full power required to create complex, large-scale enterprise solutions. Some of the ways in which Python is used includes:</p>
+                <ul class="section-list">
+                  <li>Desktop graphical application development, including games</li>
+                  <li>Mathematical and scientific analysis of data</li>
+                  <li>Web and internet development</li>
+                </ul>
+       
+            </section>
+              
+              
+            <section class="main-section" id="Variables">
+              <header class="main-section-header"><h1>Variables</h1></header>
+              <p class="section-text">Variables are containers for data. They store the value of different types of data. </p>
+              <h2 class="subsection" id="data_Types">Built-In Data Types</h2>
+              <p class="section-text">Python's built-in (or standard) data types can be grouped into several classes. Here are some of the different data types within Python:
+                
+                <ul class="section-list">
+                  <li>Integers: represent numeric data, and more specifically, whole numbers from negative infinity to infinity, like 4, 5, or -1.</li>
+                  <li>Floats: represent rational numbers, usually ending with a decimal figure, such as 1.11 or 3.14</li>
+                  <li>Strings: collections of alphabets, words or other characters. </li>
+                  <li>Boolean: can take up the values True and False, useful in conditional and comparison expressions</li>
+                  <li>Lists: used to store collection of heterogeneous items. These are mutable, which means that you can change their content without changing their identity.</li>
+                  <li>Dictionaries: are made up of key-value pairs. key is used to identify the item and the value holds as the name suggests, the value of the item.
+              </ul>
+         
+              </p> 
+            
+              <h2 class="subsection" id="Declaring">Declaring Variables</h2>
+              <p class="section-text">In python, you do not have to explicitly state the type of the variable or your data. That is because it is a dynamically typed language. Dynamically typed languages are the languages where the type of data an object can store is mutable. The syntax to declare assign a variable to data is <code>variable name = data value</code> Below are some variable declarations for some of python's built-in-data types:</p>
+            
+              <code class="code-section">
+<i># integers</i>
+ 
+x = 4
+y = 20 + 5
+              
+<i># floats</i>
+              
+x = 24.85
+y = 23 / 2
+              
+<i># strings</i>
+              
+first_name = "Amir"
+last_name  = "Henry"
+full_name  = first_name + last_name
+              
+<i># boolean</i>
+              
+result = False
+result = 3 > 5
+              
+<i># Lists</i>
+              
+scores = [75, 99, 56, 86]
+              
+<i># Dictionaries</i>
+              
+rhymes = {man: tan, land: sand}
+            </code>
+            
+            </section>
+              
+            <section class="main-section" id="Conditionals">
+              <header class="main-section-header"><h1>Conditionals</h1></header>
+              <p class="section-text"> Conditional expressions control the flow of the program's execution. In Python, conditional expressions use logic operators to make decisions within the code. Python supports the usual logic operators from mathematics:</p>
+                <ul class ="section-list">
+                  <li>equals: <code>a == b </code></li>
+                  <li>not equals: <code> a != b </code></li>
+                  <li>less than: <code> a &lt b </code></li>
+                  <li>less than or equal to: <code> a &lt= b </code></li>
+                  <li>greater than: <code> a &gt b </code></li>
+                  <li>greater than or equal to <code> a &gt= b </code></li>
+                </ul>
+              <h2 class ="subsection" id="If-Elif-Else">If/Elif/Else</h2> 
+              <p class="section-text">These conditions can be used in combination with if, elif and else statements to control the decision making and code execution within a python program. An "if statement" is written by using the <code>if</code> keyword. The <code>elif</code> keyword is pythons way of saying "if the previous conditions were not true, then try this condition". The <code>else</code> keyword catches anything which isn't caught by the preceding conditions.</p>
+              <code class="code-section">
+a = 200
+b = 33
+                  
+if b > a:
+  print("b is greater than a")
+                
+elif a == b:
+  print("a and b are equal")
+                
+else:
+  print("a is greater than b")
+                  </code>
+                  <p class="section-text">In this example a is greater to b, so the first condition is not true, also the elif condition is not true, so we go to the else condition and print to screen that "a is greater than b". Notice that Python relies on indentation, using whitespace, to define scope in the code. Other programming languages often use curly-brackets for this purpose. </p>
+          </section>
+              
+            <section class="main-section" id="Loops">
+              <header><h1>Loops</h1></header>
+              <p class="section-text">Python also utilizes two types of loops to further control over the program's flow. Loops are a sequence of code that repeats until a certain condition is met. Python has two built-in loop commands: <code>while</code> loops and <code>for</code> loops.</p>
+              <h2 class="subsection" id="While">While Loop</h2>
+              <p class="section-text">With the <code>while</code> loop we can execute a set of statements as long as a condition is true.</p>
+              <code class="code-section">
+i = 1
+while i &lt 6:
+  print(i)
+  i = i + 1
+            </code>
+              <p class ="section-text">The <code>while</code> loop requires relevant variables to be ready and a condition. In this example, we need to define an indexing variable, <code>i</code>, which we set to 1 and a condition that tells the loop when to run while it remains true, in this case, while <code>i &lt 6</code>. The loop prints <code> i</code> then adds one to it. This repeats while <code>i</code> is less than 6.</p>
+          
+              <h2 class="subsection"id="For">For Loop</h2>
+              <p class="section-text">A <code>for</code> loop is used for iterating over a sequence (such as a list, a tuple, a dictionary, a string).
+
+                This is less like the <code>for</code> keyword in other programming language, and works more like an iterator method as found in other object-orientated programming languages.
+
+                With the <code>for</code> loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+              <code class="code-section">
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+              </code>
+              <p class="section-text">The <code>for</code> loop does not require an indexing variable to set beforehand. In the above example, the variable <code>x</code> changes to the next element in the list with each iteration of the loop. At each iteration of the loop, the code prints each value of <code>x</code>. The loop ends when the entire list has been iterated through. In this example, the loop runs three times because there are three elements in the list.</p>
+          </section>
+              
+            <section class="main-section" id="Functions">
+              <header><h1>Functions</h1></header>
+              <p class="section-text">A function is a block of code which only runs when it is called. You can pass data, known as parameters, into a function. A function can return data as a result.</p>
+              <p class = "section-text">In Python a function is defined using the <code>def</code> keyword:</p>
+             <code class="code-section">
+def my_function():
+  print("Hello from a function")
+              </code>
+             <h2 class="subsection" id="Calling">Calling Functions</h2>
+             <p class ="section-text">To call a function, use the function name followed by parenthesis:</p>
+              <code class="code-section">
+def my_function():
+  print("Hello from a function")
+
+my_function()                 
+               
+              </code>
+              <h2 class="subsection" id="Parameters">Parameters</h2>
+              <p class="section-text">Information can be passed to functions as parameter. Parameters are specified after the function name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma.</p>
+
+<p class="section-text">The following example has a function with one parameter (num). When the function is called, we pass along a number, which is used inside to print it's square:</p>
+              <code class="code-section">
+def my_square(num):
+  print(num*num)
+              </code>
+              <p class="section-text"> Calling <code>my_square(5)</code> prints out the integer 25 to the console.</p>
+              <h2 class="subsection" id="Return">Return</h2>
+              <p class="section-text">All python functions return a value when called. The default value is set to <code>None</code>. To let a function return a specific value, use the <code>return</code> statement:</p>
+                <code class="code-section">
+def my_square(num):
+  return(num*num)
+                </code>
+              <p class ="section-text">Now, instead of printing the square, <code> my_square</code> returns the value of the square, which can then be passed along to other segments of the code. </p>
+          </section>
+              <section id="References">
+                <header><h1>References</h1></header>
+                <p class="section-text">All documentation from this page taken from <a href="https://www.w3schools.com/python/default.asp" target="blank">w3Schools</a>, <a href="https://docs.python.org/3/tutorial/introduction.html#numbers" target="blank">The Python Tutorial</a>, <a href="https://en.wikibooks.org/wiki/Python_Programming" target="blank">Python Programming</a>, <a href="https://realpython.com/python-first-steps/" target="blank">Real Python</a>, and <a href="https://www.datacamp.com/community/tutorials/data-structures-python" target="blank">Data Camp</a>.</p>
+          </section>
+
+              </main>
+              
+                  
+
+          </body>
+		  </html>
+            
+
+            
+     
+              
+               
+              
+                
+            
