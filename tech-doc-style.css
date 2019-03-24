@@ -5,27 +5,34 @@ font-family: 'Raleway', sans-serif;
 }
 
 .menu-open{
-  color: #000;
+  display: block;
   text-decoration: none;
+  width: 10rem;
+ 
+  
 }
 
 #menu-open-icon{
   display: block;
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  background-color: #040404;
   color: #909090;
 }
 
+.fixedbar{
+  background-color:#040404;
+}
 .mobile-header{
   font-size: 1.45rem;
-  display: inline-block;
+  display: block;
   position: absolute;
-  top:-.4rem;;
+  top:-.4rem;
+  left: 0;
   margin-left: 3rem;
-  background-color: #040404;
   color: #909090;
-  width: auto;
+ 
+  
+  
 }
 
 #navbar{
@@ -111,7 +118,8 @@ ul a{
 }
 
 .section-text{
-  margin: 1rem 2rem;
+  margin-left: 1rem; 
+  margin-bottom:2rem;
 }
 
 .section-list{
@@ -120,7 +128,7 @@ ul a{
 }
 
 .subsection{
-  margin-left: 2rem;
+  margin-left: 1rem;
   font-size: 1.25rem;
 }
 
@@ -133,7 +141,7 @@ code{
 .code-section{
   display: block;
   white-space: pre;
-  margin-left: 3.5em;
+  margin-left: 1rem;
   background-color:#f7f7f7;
   font-size: 1rem;
   text-align: left;
@@ -152,6 +160,9 @@ code{
     justify-content: start;
     
   
+  }
+  .fixedbar{
+    display: none;
   }
   
   #menu-open-icon{
@@ -184,8 +195,8 @@ code{
    
    display: block;
    flex: 0 1 auto;
-   margin-left: 30rem;
-  
+   margin-left: 30rem;  
+    
   }
   
  #navbar ul li{
@@ -194,6 +205,12 @@ code{
   }
   
   
+
+
+.code-section{
+  margin-left: 3.5em;
+  
+  }
 }
     
 /*Mobile Landscape*/
@@ -213,10 +230,10 @@ code{
 
       }
                      
-    #navbar:target{
- display: block;
- left: 0;
-      width: 100;
+	#navbar:target{
+		display: block;
+		left: 0;
+		width: 100;
  
 }
 
