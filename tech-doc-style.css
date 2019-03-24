@@ -1,9 +1,9 @@
 html, body{
   
 
-    font-family: 'Raleway', sans-serif;
-
+font-family: 'Raleway', sans-serif;
 }
+
 .menu-open{
   color: #000;
   text-decoration: none;
@@ -12,41 +12,53 @@ html, body{
 #menu-open-icon{
   display: block;
   font-size: 2rem;
+  margin-bottom: 1.5rem;
+  background-color: #040404;
+  color: #909090;
+}
+
+.mobile-header{
+  font-size: 1.45rem;
+  display: inline-block;
+  position: absolute;
+  top:-.4rem;;
+  margin-left: 3rem;
+  background-color: #040404;
+  color: #909090;
+  width: auto;
 }
 
 #navbar{
  position: absolute;
  display: none;
- top: 0;
+ top: 0rem;
  left: -2000px;
  transition: left 0.5s ease;
  height: auto;
-
+ width: 100%;
 }
 
 #navbar ul header li{
   color: #909090;
-  font-size: 2rem;
+  font-size: 1.75rem;
+  line-height: 2rem;  
 }
 
 ul a{
   color: #909090;
-  text-decoration: none;
-  
+  text-decoration: none;  
 }
 
 #navbar ul li{
    display: block;
    border-bottom:.1rem solid #909090;
    margin-left: -2.5rem;
-   font-size: 1.5rem; 
-  
+   font-size: 1.5rem;  
 }
 
 .menu-close{
  color: #909090;
- text-decoration: none;
-  
+ text-decoration: none;  
 }
 
 #menu-close-icon{
@@ -54,14 +66,14 @@ ul a{
   position: absolute;
   right: 0;
   top: 1rem;
-  font-size: 2.5rem;
-  
+  font-size: 2.3rem; 
 }
 
 #navbar:target{
  display: block;
  left: 0;
- 
+ top: -.75rem;
+  z-index: 5000;
 }
 
 #navbar:target .menu-close-icon{
@@ -70,8 +82,6 @@ ul a{
 
 #navbar:target ul a{
   position: relative;
-  z-index: 1001;
- 
 }
 
 #navbar:target + .menu-backdrop{
@@ -82,10 +92,7 @@ ul a{
   width:100vw;
   height: 100vh;
   opacity: .1;
- 
- 
-
-
+  z-index: 1000;
 }
 
 #navbar ul{
@@ -93,7 +100,6 @@ ul a{
   background-color: #040404;
   list-style-type: none;
   width: auto;
- 
 }
 
 #main-doc{
@@ -102,9 +108,7 @@ ul a{
 }
 
 .main-section-header{
- 
 }
-
 
 .section-text{
   margin: 1rem 2rem;
@@ -134,12 +138,11 @@ code{
   font-size: 1rem;
   text-align: left;
   position: relative; 
-  width: auto;
-  
+  width: auto; 
 }
 
 
-
+/*Laptop and Desktop Screens*/
 
 @media only screen and (min-device-width: 768px) {
   
@@ -157,6 +160,10 @@ code{
   
   #menu-close-icon{
     display: none;
+  }
+  
+  .mobile-header{
+   display: none;  
   }
   
   #navbar{
@@ -179,10 +186,6 @@ code{
    flex: 0 1 auto;
    margin-left: 30rem;
   
-   
-    
-  
-    
   }
   
  #navbar ul li{
@@ -190,26 +193,15 @@ code{
    font-size: 1.5rem; 
   }
   
-  #navholder{
-    grid-column: 1/2;
-    background-color: #040404;
-    border:.1rem solid #909090;
-    width: auto;
-
-    
-  }
   
 }
- 
     
- 
 /*Mobile Landscape*/
 
 @media only screen and (min-device-width: 480px) 
                    and (max-device-width: 768px) 
                    and (orientation: landscape) {
 
-  
    #navbar{
       position: absolute;
       display: none;
@@ -220,6 +212,14 @@ code{
       width: 100%;
 
       }
+                     
+    #navbar:target{
+ display: block;
+ left: 0;
+      width: 100;
+ 
+}
+
                      
    
 
